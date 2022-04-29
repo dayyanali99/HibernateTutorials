@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.learnhibernate.xmlmapping.Person" table="person">
+        <id name="id" column="person_id">
+            <generator class="native" />
+        </id>
+        <property name="name" column="person_name" type="java.lang.String" />
+        <property name="address" column="person_address" type="java.lang.String" />
+        <property name="phone" column="person_phone" type="java.lang.String" />
+    </class>
+</hibernate-mapping>
